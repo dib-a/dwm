@@ -9,11 +9,6 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source Code Pro:size=10" };
 static const char dmenufont[]       = "Source Code Pro:size=10";
-static const char col_bar[];
-static const char col_border[];
-static const char col_font[];
-static const char col_font_selected[];
-static const char col_bg_selected[];
 static const char *colors[][3]      = {
 	/*               fg			bg         		border   */
 	[SchemeNorm] = { col_font,		col_bar, 		col_border},
@@ -79,8 +74,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F2,     			spawn,          SHCMD("setxkbmap ar")},
 	{ MODKEY,                       XK_F3,     			spawn,          SHCMD("setxkbmap de")},
 
-	{ MODKEY|ShiftMask,             XK_r,      			spawn,          SHCMD("poweroff")},
-	{ MODKEY|ShiftMask,             XK_s,      			spawn,          SHCMD("reboot")},
+	{ MODKEY|ShiftMask,             XK_s,      			spawn,          SHCMD("poweroff")},
+	{ MODKEY|ShiftMask,             XK_r,      			spawn,          SHCMD("reboot")},
 
 	{ MODKEY,                       XK_p,      			spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		XK_Return, 			spawn,          {.v = termcmd } },
