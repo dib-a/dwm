@@ -7,14 +7,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:size=11";
+static char *font = font_source_code_pro;
 static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
- * 2: scroll and/or utmp
- * 3: SHELL environment variable
+ * 2: scroll and/or utmp * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
@@ -96,8 +95,6 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-static const char col_font[];
-static const char col_bar[];
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
@@ -124,8 +121,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	col_font, /* default foreground colour */
-	col_bar, /* default background colour */
+	col_green, /* default foreground colour */
+	col_black, /* default background colour */
 };
 
 
