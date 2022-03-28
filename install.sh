@@ -1,5 +1,7 @@
 MY_PATH=$(cd "$MY_PATH" && pwd)
 
+sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot
+
 mkdir suckless
 cd suckless
 git clone https://git.suckless.org/dwm
