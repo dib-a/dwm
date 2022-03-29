@@ -3,4 +3,6 @@ MY_PATH=$(cd "$MY_PATH" && pwd)
 
 sh $MY_PATH/software/dwm/add/bar.sh &
 
+feh --bg-scale $MY_PATH/software/dwm/add/images/background.png &
+
 exec dwm
