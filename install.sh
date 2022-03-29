@@ -11,5 +11,5 @@ cd dmenu
 sudo make clean install
 cd $MY_PATH
 sudo chmod -R 755 suckless
-sh update_dwm.sh
-sh update_st.sh
+cd scripts
+sh all.sh
