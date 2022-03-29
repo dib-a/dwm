@@ -9,8 +9,6 @@ if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
 	startx
 fi
 
-export NNN_TRASH=1                                 # trash (needs trash-cli) instead of delete
-
 PS1='[\u@\h \W]\$ '
 
 alias ls='ls --color=auto'
