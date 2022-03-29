@@ -1,0 +1,6 @@
+#!/bin/sh
+MY_PATH=$(cd "$MY_PATH" && pwd)
+
+sh $MY_PATH/software/dwm/add/bar.sh &
+
+exec dwm
