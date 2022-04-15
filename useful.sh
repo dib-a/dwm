@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo pacman -S inkscape gimp okular ranger neofetch htop geogebra 
+sudo pacman -S inkscape gimp okular ranger neofetch htop geogebra mpv
 
-cd opt
+cd /opt
 mkdir fonts
 cd fonts
 
