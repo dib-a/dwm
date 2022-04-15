@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S pulseaudio pulsemixer inkscape gimp okular ranger neofetch htop geogebra mpv xournalpp xf86-input-wacom keepassxc ntfs-3g telegram-desktop
+sudo pacman -S pulseaudio pulsemixer inkscape gimp okular ranger neofetch htop geogebra mpv xournalpp xf86-input-wacom keepassxc ntfs-3g telegram-desktop syncthing
 
 cd /opt
 mkdir fonts
