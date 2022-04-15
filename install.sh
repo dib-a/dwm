@@ -1,6 +1,6 @@
 MY_PATH=$(cd "$MY_PATH" && pwd)
 
-sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot
+sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxinerama firefox ttf-font-awesome 
 
 mkdir suckless
 cd suckless
