@@ -63,6 +63,7 @@ static Key keys[] = {
 	/* modifier                     key        			function        argument */
 	{ MODKEY,                       XK_i,      			spawn,          SHCMD("firefox")},
 	{ MODKEY,                       XK_n,      			spawn,          SHCMD("st nnn")},
+	{ MODKEY,                       XK_r,      			spawn,          SHCMD("st ranger")},
 
 	{ 0,				XF86XK_AudioRaiseVolume,	spawn,          SHCMD("pulsemixer --change-volume +10") },
 	{ 0,				XF86XK_AudioLowerVolume,      	spawn,          SHCMD("pulsemixer --change-volume -10") },
