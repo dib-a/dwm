@@ -15,3 +15,6 @@ alias ls='ls --color=auto'
 alias make='sudo make clean install'
 alias makepkg='makepkg -si'
 alias update='sudo pacman -Syu && sudo pamcan -Syyu'
+alias wuni='sudo netctl start eduroam'
+alias whome='sudo netctl start home'
+

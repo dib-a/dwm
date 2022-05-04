@@ -65,6 +65,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_n,      			spawn,          SHCMD("st nnn")},
 	{ MODKEY,                       XK_r,      			spawn,          SHCMD("st ranger")},
 
+	{ MODKEY|ShiftMask,             XK_l,      			spawn,          SHCMD("slock")},
+
 	{ 0,				XF86XK_AudioRaiseVolume,	spawn,          SHCMD("pulsemixer --change-volume +10") },
 	{ 0,				XF86XK_AudioLowerVolume,      	spawn,          SHCMD("pulsemixer --change-volume -10") },
 	{ 0,				XF86XK_AudioMute,      		spawn,          SHCMD("pulsemixer --toggle-mute") },
