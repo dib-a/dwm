@@ -1,3 +1,3 @@
 # dwm
 
-This is my arch linux dwm setup
+This is my dwm setup
