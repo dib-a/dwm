@@ -1,4 +1,4 @@
-static const char col_green[] = "#2ec27e";
-static const char col_black[] = "#000000";
+static const char col_fg[] = "#ffffff";
+static const char col_bg[] = "#000000";
 
-static char font_source_code_pro[] = "Source Code Pro:size=11";
+static char font[] = "IBM Plex Sans Arabic:size=11";
