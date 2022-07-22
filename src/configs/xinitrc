@@ -1,8 +1,0 @@
-#!/bin/sh
-MY_PATH=$(cd "$MY_PATH" && pwd)
-
-sh /opt/setup-dwm/add/bar.sh &
-
-feh --bg-scale /opt/setup-dwm/add/images/background.png &
-
-exec dwm
