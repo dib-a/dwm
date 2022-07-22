@@ -7,7 +7,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = font_source_code_pro;
+static char *font = font;
 static int borderpx = 2;
 
 /*
