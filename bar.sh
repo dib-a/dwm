@@ -3,6 +3,15 @@ get_date() {
     printf "%s" "[  $DATE ]"
 }
 
+get_backlight() {
+	LIGHT_ACT="$(cat /sys/class/backlight/intel_backlight/actual_brightness)"
+	LIGHT_MAX="$(cat /sys/class/backlight/intel_backlight/max_brightness)"
+
+	LIGHT_PER="$(($LIGHT_ACT*100/$LIGHT_MAX))"
+	
+       	printf "%s" "[  $LIGHT_PER% ]"
+}
+
 get_battery() {
    BAT_PER="$(cat /sys/class/power_supply/BAT0/capacity)"
    BAT_STAT="$(cat /sys/class/power_supply/BAT0/status)"
@@ -59,7 +68,7 @@ get_wifi() {
 }
 while true
 do
-    xsetroot -name " $(get_wifi) $(get_ram) $(get_volume) $(get_battery)$(get_date)"
-    #xsetroot -name "$(get_volume) $(get_ram) $(get_date)"
-    sleep 1
+	xsetroot -name " $(get_wifi)$(get_ram)$(get_backlight)$(get_volume)$(get_battery)$(get_date)"
+    	#xsetroot -name "$(get_volume) $(get_ram) $(get_date)"
+    	sleep 1
 done
