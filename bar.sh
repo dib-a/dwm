@@ -46,7 +46,7 @@ get_battery() {
        printf "%s" "[  $BAT_PER% ]"
        break
    elif [[ 0 -eq 0 ]]; then
-       printf "%s" "[ $BAT_PER% ]"
+       printf "%s" "[  $BAT_PER% ]"
        break
    fi
 }
@@ -68,7 +68,7 @@ get_wifi() {
 }
 while true
 do
-	xsetroot -name " $(get_wifi)$(get_ram)$(get_backlight)$(get_volume)$(get_battery)$(get_date)"
-    	#xsetroot -name "$(get_volume) $(get_ram) $(get_date)"
+	#xsetroot -name " $(get_wifi)$(get_ram)$(get_backlight)$(get_volume)$(get_battery)$(get_date)"
+    	xsetroot -name "$(get_volume) $(get_ram) $(get_date)"
     	sleep 1
 done
