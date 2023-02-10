@@ -2,10 +2,10 @@
 
 cd ~/.build
 
-rm dwm/config.h
-rm dwm/variables.h
-rm st/config.h
-rm st/variables.h
+sudo rm dwm/config.h
+sudo rm dwm/variables.h
+sudo rm st/config.h
+sudo rm st/variables.h
 
 cp dwm-config/dwm.h dwm/config.h
 cp dwm-config/st.h st/config.h
