@@ -19,4 +19,6 @@ sudo make clean install
 cd ../st
 sudo make clean install
 
+echo "exec dwm" >> ~/.xinitrc
+
 sh update-configs.sh
