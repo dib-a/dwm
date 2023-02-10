@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S libx11 libxft xorg-server xorg-xinit xorg-xsetroot ttf-ibm-plex
+sudo pacman -S libx11 libxft libxinerama xorg-server xorg-xinit xorg-xsetroot ttf-ibm-plex
 
 mkdir ~/.build
 cd ~/.build
@@ -20,5 +20,3 @@ cd ../st
 sudo make clean install
 
 echo "exec dwm" >> ~/.xinitrc
-
-sh update-configs.sh
