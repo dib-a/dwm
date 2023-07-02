@@ -24,7 +24,7 @@ read -p "Do you want to add dib-a customizations? (y/n): " choice
 
 if [ "$choice" == "y" ]; then
     echo "Adding customizations..."
-    sh update.sh
+    sh /opt/dwm/update.sh
 else
     echo "Skipping customization."
 fi
