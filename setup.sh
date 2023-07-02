@@ -19,3 +19,12 @@ sudo make clean install
 # sudo make clean install
 
 echo "exec dwm" >> ~/.xinitrc
+
+read -p "Do you want to add dib-a customizations? (y/n): " choice
+
+if [ "$choice" == "y" ]; then
+    echo "Adding customizations..."
+    sh update.sh
+else
+    echo "Skipping customization."
+fi
