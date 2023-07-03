@@ -55,15 +55,14 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", var_font, "-nb", col_bg, "-nf", col_fg, "-sb", col_fg, "-sf", col_bg, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 
 #include <X11/XF86keysym.h>
 
 static Key keys[] = {
 	/* modifier                     key        					function        argument */
 	{ MODKEY,                       XK_i,      					spawn,          SHCMD("firefox")},
-	{ MODKEY,                       XK_n,      					spawn,          SHCMD("st nnn")},
-	{ MODKEY,                       XK_r,      					spawn,          SHCMD("st ranger")},
+	{ MODKEY,                       XK_r,      					spawn,          SHCMD("kitty ranger")},
 
 	{ MODKEY|ShiftMask,             XK_l,      					spawn,          SHCMD("slock")},
 
