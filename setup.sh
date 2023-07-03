@@ -13,13 +13,13 @@ suckless() {
     git clone git://git.suckless.org/dmenu >/dev/null 2>&1
     # git clone git://git.suckless.org/st
 
-    cd /opt/dwm
+    cd /opt/dwm/dwm
     sudo make clean install >/dev/null 2>&1
     
     # cd ../st
     # sudo make clean install
 
-    cd ../dmenu
+    cd /opt/dwm/dmenu
     sudo make clean install >/dev/null 2>&1
 }
 
