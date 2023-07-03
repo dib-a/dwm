@@ -13,7 +13,7 @@ suckless() {
     git clone git://git.suckless.org/dmenu >/dev/null 2>&1
     # git clone git://git.suckless.org/st
 
-    cd dwm
+    cd /opt/dwm
     sudo make clean install >/dev/null 2>&1
     
     # cd ../st
@@ -31,6 +31,8 @@ directories() {
 customization() {
     read -p "Do you want to add dib-a customizations? (y/n): " choice
 
+    directories
+
     if [ "$choice" == "y" ]; then
         echo "Adding customizations..."
         sh /opt/dwm/update.sh
@@ -39,10 +41,11 @@ customization() {
         echo "Skipping customization."
     fi
 
-    rm /home/$USER/.xinitrc
-    cp /opt/dwm/xinitrc /home/$USER/.xinitrc
+    if [ -f /home/$USER/.xinitrc ]; then
+        rm /home/$USER/.xinitrc
+    fi
 
-    directories
+    cp /opt/dwm/xinitrc /home/$USER/.xinitrc
 }
 
 suckless
