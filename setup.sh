@@ -15,13 +15,12 @@ suckless() {
 
     cd dwm
     sudo make clean install >/dev/null 2>&1
-
-    cd ../dmenu
-    sudo make clean install >/dev/null 2>&1
-
+    
     # cd ../st
     # sudo make clean install
 
+    cd ../dmenu
+    sudo make clean install >/dev/null 2>&1
 }
 
 directories() {
