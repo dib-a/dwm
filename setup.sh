@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm libx11 libxft libxinerama xorg-server xorg-xinit xorg-xsetroot ttf-fira-code >/dev/null 2>&1
+sudo pacman -S --noconfirm libx11 libxft libxinerama xorg-server xorg-xinit xorg-xsetroot ttf-fira-code ttf-font-awesome >/dev/null 2>&1
 
 mkdir -p /opt/dwm
 cd /opt/dwm
