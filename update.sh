@@ -13,8 +13,8 @@ remove_if_exists() {
     fi
 }
 
-remove_if_exists "dwm/config.h"
-remove_if_exists "dwm/variables.h"
+remove_if_exists "/opt/dwm/dwm/config.h"
+remove_if_exists "/opt/dwm/dwm/variables.h"
 #sudo rm st/config.h
 #sudo rm st/variables.h
 
