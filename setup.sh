@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 sudo pacman -S --noconfirm libx11 libxft libxinerama xorg-server xorg-xinit xorg-xsetroot ttf-fira-code >/dev/null 2>&1
 
@@ -35,7 +35,7 @@ customization() {
 
     if [ "$choice" == "y" ]; then
         echo "Adding customizations..."
-        sudo -u $USER "sh /opt/dwm/update.sh"
+        sh /opt/dwm/update.sh
         cp /opt/dwm/img/tree.jpg /home/$USER/media/wallpapers/tree.jpg
     else
         echo "Skipping customization."

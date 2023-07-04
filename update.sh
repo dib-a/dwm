@@ -18,9 +18,9 @@ remove_if_exists "/opt/dwm/dwm/variables.h"
 #sudo rm st/config.h
 #sudo rm st/variables.h
 
-cp /opt/dwm/dwm.h /opt/dwm/dwm/config.h
+sudo cp /opt/dwm/dwm.h /opt/dwm/dwm/config.h
 #cp st.h st/config.h
-cp /opt/dwm/variables.h /opt/dwm/dwm/variables.h
+sudo cp /opt/dwm/variables.h /opt/dwm/dwm/variables.h
 #cp variables.h st/variables.h
 
 cd /opt/dwm/dwm
