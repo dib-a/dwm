@@ -9,8 +9,8 @@ suckless() {
     echo "--------------------------------------------------"
     echo "DWM is currently being installed. Please wait..."
     echo "--------------------------------------------------"
-    git clone git://git.suckless.org/dwm >/dev/null 2>&1
-    git clone git://git.suckless.org/dmenu >/dev/null 2>&1
+    git clone git://git.suckless.org/dwm #>/dev/null 2>&1
+    git clone git://git.suckless.org/dmenu #>/dev/null 2>&1
     # git clone git://git.suckless.org/st
 
     cd /opt/dwm/dwm
