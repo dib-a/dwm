@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 sudo pacman -S --noconfirm libx11 libxft libxinerama xorg-server xorg-xinit xorg-xsetroot ttf-fira-code >/dev/null 2>&1
 
@@ -9,8 +9,8 @@ suckless() {
     echo "--------------------------------------------------"
     echo "DWM is currently being installed. Please wait..."
     echo "--------------------------------------------------"
-    git clone git://git.suckless.org/dwm #>/dev/null 2>&1
-    git clone git://git.suckless.org/dmenu #>/dev/null 2>&1
+    sudo git clone git://git.suckless.org/dwm #>/dev/null 2>&1
+    sudo git clone git://git.suckless.org/dmenu #>/dev/null 2>&1
     # git clone git://git.suckless.org/st
 
     cd /opt/dwm/dwm
