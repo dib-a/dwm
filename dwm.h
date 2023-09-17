@@ -73,8 +73,8 @@ static Key keys[] = {
 	{ 0,       						XF86XK_MonBrightnessDown, 	spawn, 			SHCMD("xbacklight -dec 5%")},
 
 	{ MODKEY,                       XK_F1,     					spawn,          SHCMD("setxkbmap us")},
-	{ MODKEY,                       XK_F2,     					spawn,          SHCMD("setxkbmap ar")},
-	{ MODKEY,                       XK_F3,     					spawn,          SHCMD("setxkbmap de")},
+	{ MODKEY,                       XK_F2,     					spawn,          SHCMD("setxkbmap ara")},
+	{ MODKEY,                       XK_F3,     					spawn,          SHCMD("setxkbmap -layout de -variant us")},
 
 	{ MODKEY|ShiftMask,             XK_s,      					spawn,          SHCMD("poweroff")},
 	{ MODKEY|ShiftMask,             XK_r,      					spawn,          SHCMD("reboot")},
