@@ -45,3 +45,4 @@ create_subfolders "$media_dir" "images" "videos" "nasheed" "wallpaper" "screensh
 
 create_folder "$home_dir/configs"
 create_folder "$home_dir/downloads"
+create_folder "$home_dir/scripts"
