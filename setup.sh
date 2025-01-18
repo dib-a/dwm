@@ -25,7 +25,7 @@ suckless() {
 
 directories() {
     sh /opt/dwm/directories.sh
-    cp /opt/dwm/img/tree.jpg /home/$USER/media/wallpapers/tree.jpg
+    cp -r /opt/dwm/wallpaper /home/$USER/media/
 }
 
 customization() {

@@ -34,15 +34,14 @@ documents_dir="$home_dir/documents"
 create_folder "$documents_dir"
 
 # Unterverzeichnisse für Dokumente
-create_subfolders "$documents_dir" "work" "personal" "school" "archive" "shared" "templates" "persons" 
+create_subfolders "$documents_dir" "work" "personal" "study" "archive" "templates" "persons" 
 
 # Media
 media_dir="$home_dir/media"
 create_folder "$media_dir"
 
 # Unterverzeichnisse für Media
-create_subfolders "$media_dir" "images" "videos" "nasheed" "archive" "shared" "wallpapers" "screenshots" "podcasts" "audiobooks" "quran"
+create_subfolders "$media_dir" "images" "videos" "nasheed" "wallpaper" "screenshots" "podcasts" "audiobooks" "quran"
 
 create_folder "$home_dir/configs"
-create_folder "$home_dir/backup"
 create_folder "$home_dir/downloads"
